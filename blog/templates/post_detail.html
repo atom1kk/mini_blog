@@ -7,4 +7,7 @@
 		<p>{{ post.author }}</p>
 	</div>
 
+	<p><a href="{% url 'post_edit' post.pk %}">+ Edit your post</a></p>
+	<p><a href="{% url 'post_delete' post.pk %}">+ Delete your post</a></p>
+
 {% endblock content %}
